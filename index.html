@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mo — Projects, Design &amp; Development</title>
+  <meta name="description" content="The portfolio of Mo: computer science graduate, web designer and developer. Browse software, web, UI/UX and game projects.">
+  <meta name="theme-color" content="#141414">
+  <meta property="og:title" content="Mo — Projects, Design &amp; Development">
+  <meta property="og:description" content="A cinematic portfolio of software development, web design, UI/UX and creative projects.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="site-nav">
+    <div class="nav__inner">
+      <a class="logo" href="#home" aria-label="MO — back to top">MO<span class="logo__dot">.</span></a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#about">About Me</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__grid"></span>
+        <span class="hero__orb hero__orb--a"></span>
+        <span class="hero__orb hero__orb--b"></span>
+        <span class="hero__monogram">MO</span>
+        <span class="hero__scan"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--red hero__eyebrow">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Featured portfolio
+        </p>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__title-small">Hi, I'm</span>
+          <span class="hero__title-name">Mo<span class="hero__dot">.</span></span>
+        </h1>
+
+        <p class="hero__meta">
+          <span>Computer Science Graduate</span>
+          <span class="hero__sep" aria-hidden="true"></span>
+          <span>Web Designer</span>
+          <span class="hero__sep" aria-hidden="true"></span>
+          <span>UI/UX Enthusiast</span>
+          <span class="hero__sep" aria-hidden="true"></span>
+          <span>Developer</span>
+        </p>
+
+        <p class="hero__intro">
+          I'm a Computer Science graduate passionate about creating engaging digital
+          experiences, solving problems through technology and turning ideas into
+          interactive products.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg>
+            Explore My Projects
+          </a>
+          <a class="btn btn--ghost" href="#about">
+            About Me
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <a class="hero__scroll" href="#projects" aria-label="Scroll to the projects section">
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+          Scroll to browse
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Browse the catalogue</p>
+            <h2 class="h2" id="projects-title">Projects</h2>
+          </div>
+          <p class="section__note">
+            Hover a title to preview it. Select it to open the full story.
+          </p>
+        </div>
+
+        <div id="featured-mount" class="reveal" style="--d: 1"></div>
+
+        <div class="row-block reveal" style="--d: 2">
+          <div class="row-head">
+            <h3 class="row-title" id="row-projects-title">My Projects</h3>
+            <div class="row-nav">
+              <button class="row-btn" type="button" data-dir="-1" aria-label="Scroll My Projects left" aria-controls="row-projects">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+              </button>
+              <button class="row-btn" type="button" data-dir="1" aria-label="Scroll My Projects right" aria-controls="row-projects">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="row-track" id="row-projects" role="group" aria-labelledby="row-projects-title" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="container about">
+<div class="profile-card reveal">
+<div class="profile-card__art">
+<img class="profile-card__photo" src="assets/profile/mo.jpg" alt="Portrait of Mo" width="800" height="640" loading="lazy" decoding="async">
+<span class="profile-card__ring" aria-hidden="true"></span>
+<span class="profile-card__ring profile-card__ring--2" aria-hidden="true"></span>
+</div>
+<div class="profile-card__body">
+<p class="profile-card__label">Profile 01</p>
+<p class="profile-card__name">Mo</p>
+<p class="profile-card__role">Computer Science Graduate</p>
+<ul class="profile-card__tags">
+<li>Designer</li>
+<li>Developer</li>
+<li>Problem solver</li>
+</ul>
+</div>
+</div>
+
+        <div class="about__copy">
+          <p class="eyebrow reveal">About me</p>
+          <h2 class="h2 about__title reveal" id="about-title" style="--d: 1">
+            A developer who cares how it <em>feels</em>.
+          </h2>
+          <p class="about__lead reveal" style="--d: 2">
+            I'm a Computer Science graduate who likes the space where logic meets craft:
+            building things that work reliably underneath and feel effortless on the surface.
+          </p>
+          <p class="reveal" style="--d: 3">
+            Most of what I know has come from making things — individual builds where I owned
+            every decision, and collaborative projects where the result depended on
+            communication, planning and shared standards. I've worked with Agile and
+            Scrum-style workflows, and I'm comfortable turning a loose brief into a plan,
+            a prototype and then a finished product.
+          </p>
+          <p class="reveal" style="--d: 4">
+            On the design side I'm drawn to UI/UX: wireframing, prototyping and checking
+            whether real people can find their way around what I've built. On the engineering
+            side I care about clean structure, accessible markup and code that someone else
+            can pick up without a map.
+          </p>
+          <p class="reveal" style="--d: 5">
+            I'm always interested in work where design and engineering have to solve a real
+            problem together — that's the part I enjoy most.
+          </p>
+
+          <ul class="about__list reveal" style="--d: 6">
+            <li><span aria-hidden="true">→</span> Interest in UI/UX, web design and software development</li>
+            <li><span aria-hidden="true">→</span> Experience across individual and collaborative projects</li>
+            <li><span aria-hidden="true">→</span> Comfortable with Agile methodologies and project management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">The toolbox</p>
+            <h2 class="h2" id="skills-title">Skills</h2>
+          </div>
+          <p class="section__note">
+            The disciplines I work across, from first sketch to shipped build.
+          </p>
+        </div>
+
+        <div class="row-block reveal" style="--d: 1">
+          <div class="row-head">
+            <h3 class="row-title" id="row-skills-title">Explore My Skills</h3>
+            <div class="row-nav">
+              <button class="row-btn" type="button" data-dir="-1" aria-label="Scroll Explore My Skills left" aria-controls="row-skills">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+              </button>
+              <button class="row-btn" type="button" data-dir="1" aria-label="Scroll Explore My Skills right" aria-controls="row-skills">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="row-track row-track--tiles" id="row-skills" role="group" aria-labelledby="row-skills-title" tabindex="0"></div>
+        </div>
+
+        <div class="toolkit">
+          <h3 class="toolkit__title reveal">Technical toolkit</h3>
+          <div class="skill-grid" id="skill-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">How I work</p>
+            <h2 class="h2" id="approach-title">Behind the Projects</h2>
+          </div>
+          <p class="section__note">
+            The process behind the catalogue — how ideas become working products.
+          </p>
+        </div>
+
+        <div class="row-block reveal" style="--d: 1">
+          <div class="row-head">
+            <h3 class="row-title sr-only" id="row-approach-title">Behind the Projects carousel</h3>
+            <div class="row-nav">
+              <button class="row-btn" type="button" data-dir="-1" aria-label="Scroll Behind the Projects left" aria-controls="row-approach">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+              </button>
+              <button class="row-btn" type="button" data-dir="1" aria-label="Scroll Behind the Projects right" aria-controls="row-approach">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="row-track row-track--tiles" id="row-approach" role="group" aria-labelledby="row-approach-title" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="contact__glow" aria-hidden="true"></div>
+          <p class="eyebrow eyebrow--red">Next episode</p>
+          <h2 class="contact__title" id="contact-title">Ready to collaborate?</h2>
+          <p class="contact__lead">
+            If you're building something that deserves a thoughtful interface and solid
+            engineering, I'd like to hear about it.
+          </p>
+          <div class="contact__actions" id="contact-actions"></div>
+          <p class="contact__note">
+            <span class="note-mark" aria-hidden="true">i</span>
+            Items marked “placeholder” need your details — add them once in
+            <code>js/data.js</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--sm" href="#home" aria-label="MO — back to top">MO<span class="logo__dot">.</span></a>
+      <p>Designed &amp; built by Mo. <span class="footer__sep" aria-hidden="true">·</span> <span id="year">2026</span></p>
+      <a class="footer__top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT DETAIL DIALOG ============ -->
+  <dialog class="detail" id="project-dialog" aria-labelledby="detail-title">
+    <div class="detail__panel">
+      <button class="detail__close" type="button" id="detail-close" aria-label="Close project details">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="detail__scroll" id="detail-content"></div>
+    </div>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">
+      <p><strong>JavaScript is required</strong> to browse the project catalogue. Please enable it and reload.</p>
+    </div>
+  </noscript>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

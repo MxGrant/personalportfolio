@@ -1,0 +1,16 @@
+# Agent/tool metadata
+.freebuff/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and local preview artifacts
+*.log
+.preview*
+
+# Local environment files
+.env
+.env.local
+.env.*.local
